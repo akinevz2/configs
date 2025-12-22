@@ -26,12 +26,6 @@ uninstall:
 	@echo "Removed $(UNINSTALL_PACKAGES)."
 
 # Stow packages
-# Stow packages with safe adoption for shell
-stow-shell:
-	@echo "Stowing shell with safe adoption."
-	@stow --adopt -v -t $(HOME) shell
-	@echo "Shell stowed and adopted safely."
-
 stow-%:
 	@if echo $(PACKAGES) | grep -q $*; then \
 		echo "Stowing $*."; \
