@@ -4,7 +4,7 @@
 # PACKAGES := herbstluftwm neovim zsh rofi dunst polybar 
 
 # List of supported packages
-PACKAGES := zsh
+PACKAGES := zsh shell
 INSTALL_PACKAGES := stow zsh
 UNINSTALL_PACKAGES := stow zsh
 
