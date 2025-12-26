@@ -94,5 +94,12 @@ unstow:
 
 clean: unstow uninstall
 
+login:
+	@read -p "Enter your Git user name: " user_name; \
+	read -p "Enter your Git user email: " user_email; \
+	git config user.name "$$user_name"; \
+	git config user.email "$$user_email"; \
+	echo "Git user name and email configured successfully."
+
 .PHONY: all install uninstall stow unstow clean
 
